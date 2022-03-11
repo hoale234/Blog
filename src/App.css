@@ -1,38 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap');
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav{
+  margin: 0;
+  padding-top: 10px;
+  width: 100%;
+  height: 60px;
+  display: block;
+  text-align: center;
+  background-color: darkgrey;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a{
+  text-decoration: none;
+  margin: 18px;
+  font-size: 45px;
+  color: black;
+}
+nav a:hover{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.createPostPage{
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: grid;
+  place-items: center;
+}
+.cpContainer{
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  background-color: rgb(141, 141, 141);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.cpContainer h1{
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cpContainer label{
+  font-size: 20px;
 }
+
+.cpContainer .inputGp{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGp input, 
+.inputGp textarea{
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  padding: 7px;
+}
+.inputGp input{
+  height: 40px;
+}
+.inputGp textarea{
+  height: 150px;
+}
+
+.cpContainer button{
+  margin-top: 20px;
+  height: 30px;
+  border: none;
+  border-radius: 7px; 
+  cursor: pointer;
+  font-size: 17px;
+}
+.cpContainer button:hover{
+  background-color: rgb(51, 51, 51);
+  color: white;
+}
+
+input, textarea{
+  margin-top: 10px;
+}
+
+.loginPage{
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginPage p{
+  font-size: 30px;
+}
+
+.login-with-google-btn{
+  cursor: pointer;
+  width: 170px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: 'Dancing Script', cursive;
+  background-color: rgb(34, 34, 34);
+  color: white;
+}
+.login-with-google-btn:hover{
+  background-color: rgb(187, 187, 187);
+  color: black;
+}
+
+
+.logout{
+  cursor: pointer;
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  font-size: 23px;
+  font-family: 'Dancing Script', cursive;
+  color: black;
+  background-color: darkgrey;
+}
+.logout:hover{
+  color: white;
+}
+
+.homePage{
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  height: auto;
+  display: flex;flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+.homePage .post{
+  width: 600px;
+  height: auto;
+  max-height: 600px;
+  background-color: rgb(250, 250, 250);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+}
+.post .postHeader{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.postHeader .title{
+  flex: 50%;
+}
+
+.deletePost button{
+  border: none;
+  background-color: rgb(250, 250, 250);
+  cursor: pointer;
+  font-size: 20px;
+}
+
